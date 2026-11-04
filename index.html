@@ -1,86 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#271638">
-  <meta name="description"
-    content="Portfolio de Chiara Guégan, étudiante en BUT MMI à Lannion. Web design, communication, graphisme et audiovisuel.">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#271638" name="theme-color" />
+  <meta
+    content="Portfolio de Chiara Guégan, étudiante en BUT MMI à Lannion. Web design, communication, graphisme et audiovisuel."
+    name="description" />
   <title>Chiara Guégan — Portfolio créatif</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script defer="" src="script.js"></script>
 </head>
 
 <body>
+  <!-- Une seule définition SVG, réutilisée partout dans la page. -->
+  <svg aria-hidden="true" height="0" style="position:absolute;overflow:hidden" width="0"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-star" viewbox="0 0 24 24">
+        <path d="M12 1.7 14.1 9.9 22.3 12l-8.2 2.1L12 22.3l-2.1-8.2L1.7 12l8.2-2.1Z"></path>
+      </symbol>
+    </defs>
+  </svg>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <header class="site-header">
-    <nav class="nav wrap" aria-label="Navigation principale">
-      <a class="wordmark" href="#accueil" aria-label="Chiara Guégan, retour à l’accueil"><span
+    <nav aria-label="Navigation principale" class="nav wrap">
+      <a aria-label="Chiara Guégan, retour à l’accueil" class="wordmark" href="#accueil"><span
           class="wordmark-symbol">c<span class="brand-dot">.</span>g</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
-        aria-label="Ouvrir le menu"><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#projets">Mes projets</a><a href="#expertises">Ce que je fais</a><a href="#apropos">À propos</a>
-        <a class="nav-contact" href="#contact">On se parle ? <span aria-hidden="true">↗</span></a>
-      </div>
+      <button aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle"
+        type="button"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links"><a href="#projets">Mes projets</a><a href="#expertises">Ce que je fais</a><a
+          href="#apropos">À propos</a><a class="nav-contact" href="#contact">On se parle ? <span
+            aria-hidden="true">↗</span></a></div>
     </nav>
   </header>
-
   <main id="contenu">
-    <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <section aria-labelledby="hero-title" class="hero" id="accueil">
       <div class="hero-grid wrap">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> WEB DESIGN · COMMUNICATION · CRÉATION</p>
-          <h1 id="hero-title">Salut, moi<br>c’est <span class="script-name">Chiara<span class="hand-underline"
-                aria-hidden="true"></span></span><span class="period">.</span></h1>
+          <p class="eyebrow"><span aria-hidden="true" class="sparkle"><svg aria-hidden="true" class="star-icon"
+                viewbox="0 0 24 24">
+                <use href="#icon-star"></use>
+              </svg></span> WEB DESIGN · COMMUNICATION · CRÉATION</p>
+          <h1 id="hero-title">Salut, moi<br />c’est <span class="script-name">Chiara<span aria-hidden="true"
+                class="hand-underline"></span></span><span class="period">.</span></h1>
           <p class="hero-lead">J’assemble les idées, les images et le code pour créer des projets qui ont quelque chose
             à raconter.</p>
           <div class="hero-actions"><a class="button button-dark" href="#projets">Découvrir mes projets <span
-                aria-hidden="true">↘</span></a><a class="text-link" href="assets/CV_Chiara_Guégan.pdf"
-              download>Télécharger mon CV <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-footnote">En recherche de stage d’avril à juin 2026 <span class="hero-separator">/</span>
+                aria-hidden="true">↘</span></a><a class="text-link" download=""
+              href="assets/CV_Chiara_Guégan.pdf">Télécharger mon CV <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-footnote">En recherche de stage d’avril à juin 2027 <span class="hero-separator">/</span>
             Lannion et Vannes, Bretagne</div>
         </div>
         <div class="hero-art">
-          <div class="hero-photo-frame"><img src="assets/moi-2.png"
-              alt="Chiara devant les pyramides au coucher du soleil"></div>
+          <div class="hero-photo-frame"><img alt="Chiara devant les pyramides au coucher du soleil"
+              src="assets/moi-2.png" /></div>
         </div>
       </div>
-      <div class="marquee" aria-label="Imaginer, concevoir, créer, partager">
-        <div class="marquee-track"><span>IMAGINER</span><b aria-hidden="true">✳</b><span>CONCEVOIR</span><b
-            aria-hidden="true">✳</b><span>CRÉER</span><b aria-hidden="true">✳</b><span>PARTAGER</span></div>
+      <div aria-label="Imaginer, concevoir, créer, partager" class="marquee">
+        <div class="marquee-track"><span>IMAGINER</span><b aria-hidden="true"><svg aria-hidden="true" class="star-icon"
+              viewbox="0 0 24 24">
+              <use href="#icon-star"></use>
+            </svg></b><span>CONCEVOIR</span><b aria-hidden="true"><svg aria-hidden="true" class="star-icon"
+              viewbox="0 0 24 24">
+              <use href="#icon-star"></use>
+            </svg></b><span>CRÉER</span><b aria-hidden="true"><svg aria-hidden="true" class="star-icon"
+              viewbox="0 0 24 24">
+              <use href="#icon-star"></use>
+            </svg></b><span>PARTAGER</span></div>
       </div>
     </section>
-
-    <section class="section projects-section wrap" id="projets" aria-labelledby="projects-title">
+    <section aria-labelledby="projects-title" class="section projects-section wrap" id="projets">
       <div class="section-head">
         <div>
           <p class="eyebrow">01 / PORTFOLIO</p>
-          <h2 id="projects-title">Quelques projets<br><em>à découvrir.</em></h2>
+          <h2 id="projects-title">Quelques projets<br /><em>à découvrir.</em></h2>
         </div>
         <p class="section-intro">Du premier croquis au résultat final : une sélection de travaux réalisés pendant mes
           études en MMI.</p>
       </div>
-      <div class="filters" role="group" aria-label="Filtrer les projets">
-        <button type="button" class="filter active" data-filter="tout" aria-pressed="true">Tout voir
-          <span>11</span></button>
-        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web design</button>
-        <button type="button" class="filter" data-filter="graphisme" aria-pressed="false">Graphisme</button>
-        <button type="button" class="filter" data-filter="audiovisuel" aria-pressed="false">Audiovisuel</button>
-        <button type="button" class="filter" data-filter="communication" aria-pressed="false">Communication</button>
-      </div>
+      <div aria-label="Filtrer les projets" class="filters" role="group"><button aria-pressed="true"
+          class="filter active" data-filter="tout" type="button">Tout voir <span>17</span></button><button
+          aria-pressed="false" class="filter" data-filter="web" type="button">Web design</button><button
+          aria-pressed="false" class="filter" data-filter="graphisme" type="button">Graphisme</button><button
+          aria-pressed="false" class="filter" data-filter="audiovisuel" type="button">Audiovisuel</button><button
+          aria-pressed="false" class="filter" data-filter="communication" type="button">Communication</button></div>
       <div class="project-grid">
         <article class="project-card card-large" data-category="web" data-project="pokezone">
-          <button type="button" class="project-open" aria-label="Voir le projet PokéZone">
-            <div class="project-visual visual-poke"><img src="assets/pokezone.jpg"
-                alt="Captures des pages du site PokéZone" loading="lazy"><span class="project-number">01 /
-                11</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet PokéZone" class="project-open" type="button">
+            <div class="project-visual visual-poke"><img alt="Captures des pages du site PokéZone" loading="lazy"
+                src="assets/pokezone.jpg" /><span class="project-number">01 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">DÉVELOPPEMENT WEB · UI</p>
@@ -91,10 +107,10 @@
           </button>
         </article>
         <article class="project-card" data-category="graphisme communication" data-project="westfest">
-          <button type="button" class="project-open" aria-label="Voir le projet À l’West Fest">
-            <div class="project-visual visual-fest"><img src="assets/affiche-west-fest.jpg"
-                alt="Affiche du festival étudiant À l’West Fest" loading="lazy"><span class="project-number">02 /
-                11</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet À l’West Fest" class="project-open" type="button">
+            <div class="project-visual visual-fest"><img alt="Affiche du festival étudiant À l’West Fest" loading="lazy"
+                src="assets/affiche-west-fest.jpg" /><span class="project-number">02 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">DIRECTION ARTISTIQUE · AFFICHE</p>
@@ -105,11 +121,10 @@
           </button>
         </article>
         <article class="project-card" data-category="audiovisuel" data-project="film">
-          <button type="button" class="project-open" aria-label="Voir le court métrage sur les discriminations">
-            <div class="project-visual visual-film"><img src="assets/film-discriminations.jpg"
-                alt="Image du court métrage : Recrutez des compétences, pas des apparences" loading="lazy"><span
-                class="film-play" aria-hidden="true">▶</span><span class="project-number">03 / 11</span><span
-                class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Au-delà des apparences" class="project-open" type="button">
+            <div class="project-visual visual-film"><img alt="Image du court métrage" loading="lazy"
+                src="assets/film-discriminations.jpg" /><span aria-hidden="true" class="film-play">▶</span><span
+                class="project-number">03 / 17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">COURT MÉTRAGE · SENSIBILISATION</p>
@@ -120,10 +135,10 @@
           </button>
         </article>
         <article class="project-card card-large" data-category="communication graphisme" data-project="cavan">
-          <button type="button" class="project-open" aria-label="Voir le projet de valorisation de Cavan">
-            <div class="project-visual visual-cavan"><img src="assets/cavan-cahier-des-charges.jpg"
-                alt="Couverture du cahier des charges pour la valorisation de Cavan" loading="lazy"><span
-                class="project-number">04 / 11</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Destination Cavan" class="project-open" type="button">
+            <div class="project-visual visual-cavan"><img alt="Couverture du cahier des charges pour Cavan"
+                loading="lazy" src="assets/cavan-cahier-des-charges.jpg" /><span class="project-number">04 /
+                17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">STRATÉGIE · VALORISATION</p>
@@ -134,10 +149,10 @@
           </button>
         </article>
         <article class="project-card" data-category="communication web" data-project="audit">
-          <button type="button" class="project-open" aria-label="Voir le projet d’audit numérique">
-            <div class="project-visual visual-audit"><img src="assets/grand-lejon.jpg" alt="Logo du Grand Léjon"
-                loading="lazy"><span class="project-number">05 / 11</span><span class="project-arrow"
-                aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Le Grand Léjon" class="project-open" type="button">
+            <div class="project-visual visual-audit"><img alt="Logo du Grand Léjon" loading="lazy"
+                src="assets/grand-lejon.jpg" /><span class="project-number">05 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">AUDIT · COMMUNICATION DIGITALE</p>
@@ -148,11 +163,10 @@
           </button>
         </article>
         <article class="project-card" data-category="audiovisuel communication" data-project="podcast">
-          <button type="button" class="project-open" aria-label="Voir le projet de podcast Culture Numérique">
-            <div class="project-visual visual-podcast"><img src="assets/podcast.png"
-                alt="Vignette du podcast Art &amp; Fact sur les nouvelles technologies dans les musées"
-                loading="lazy"><span class="project-number">06 / 11</span><span class="project-arrow"
-                aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Culture Numérique" class="project-open" type="button">
+            <div class="project-visual visual-podcast"><img alt="Vignette du podcast Art &amp; Fact" loading="lazy"
+                src="assets/podcast.png" /><span class="project-number">06 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">PODCAST · NARRATION</p>
@@ -163,10 +177,10 @@
           </button>
         </article>
         <article class="project-card" data-category="web" data-project="voyage">
-          <button type="button" class="project-open" aria-label="Voir le site web de voyage">
-            <div class="project-visual visual-voyage"><img src="assets/site-voyage.jpg"
-                alt="Capture du site de voyage présentant plusieurs destinations" loading="lazy"><span
-                class="project-number">07 / 11</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Voyage &amp; destinations" class="project-open" type="button">
+            <div class="project-visual visual-voyage"><img alt="Capture du site de voyage" loading="lazy"
+                src="assets/site-voyage.jpg" /><span class="project-number">07 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">DÉVELOPPEMENT WEB · INTERFACE</p>
@@ -177,10 +191,10 @@
           </button>
         </article>
         <article class="project-card" data-category="communication" data-project="festivalcom">
-          <button type="button" class="project-open" aria-label="Voir la communication du festival À l’West Fest">
-            <div class="project-visual visual-festivalcom"><img src="assets/audit-west-fest.jpg"
-                alt="Visuel du festival À l’West Fest" loading="lazy"><span class="project-number">08 / 11</span><span
-                class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet La communication d’À l’West Fest" class="project-open" type="button">
+            <div class="project-visual visual-festivalcom"><img alt="Visuel du festival À l’West Fest" loading="lazy"
+                src="assets/audit-west-fest.jpg" /><span class="project-number">08 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">COMMUNICATION · FESTIVAL</p>
@@ -191,10 +205,10 @@
           </button>
         </article>
         <article class="project-card" data-category="web" data-project="bonbons">
-          <button type="button" class="project-open" aria-label="Voir le site Les Bon-bons">
-            <div class="project-visual visual-bonbons"><img src="assets/les-bonbons-site.png"
-                alt="Page d’accueil du site Les Bon-bons, dans un univers vert et fruité" loading="lazy"><span
-                class="project-number">09 / 11</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Les Bon-bons" class="project-open" type="button">
+            <div class="project-visual visual-bonbons"><img alt="Page d’accueil du site Les Bon-bons" loading="lazy"
+                src="assets/les-bonbons-site.png" /><span class="project-number">09 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">WEB · UI/UX · CONFISERIE</p>
@@ -205,11 +219,10 @@
           </button>
         </article>
         <article class="project-card" data-category="audiovisuel communication" data-project="novacook">
-          <button type="button" class="project-open" aria-label="Voir la publicité Novacook, SAE 202">
-            <div class="project-visual visual-novacook"><img src="assets/novacook-affiche.jpg"
-                alt="Chiara dans une scène de la publicité Novacook" loading="lazy"><span class="film-play"
-                aria-hidden="true">▶</span><span class="project-number">10 / 11</span><span class="project-arrow"
-                aria-hidden="true">↗</span></div>
+          <button aria-label="Voir le projet Novacook" class="project-open" type="button">
+            <div class="project-visual visual-novacook"><img alt="Chiara dans la publicité Novacook" loading="lazy"
+                src="assets/novacook-affiche.jpg" /><span aria-hidden="true" class="film-play">▶</span><span
+                class="project-number">10 / 17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">SAE 202 · PUBLICITÉ VIDÉO</p>
@@ -220,13 +233,13 @@
           </button>
         </article>
         <article class="project-card" data-category="web" data-project="escape-game">
-          <button type="button" class="project-open" aria-label="Découvrir l’escape game informatique">
+          <button aria-label="Voir le projet Escape game informatique" class="project-open" type="button">
             <div class="project-visual visual-escape">
-              <div class="escape-preview" aria-hidden="true"><span class="escape-preview-top">PROJET DE PREMIÈRE
-                  <span>HTML / 01</span></span><strong>ESCAPE<br><em>GAME</em><span
-                    class="escape-cursor">_</span></strong><span class="escape-preview-bottom">INFORMATIQUE <span>→
-                    ENTRER DANS LE JEU</span></span></div><span class="project-number">11 / 11</span><span
-                class="project-arrow" aria-hidden="true">↗</span>
+              <div aria-label="Visuel de l’escape game informatique" class="escape-preview"><span
+                  class="escape-preview-top">PROJET DE PREMIÈRE <span>HTML /
+                    01</span></span><strong>ESCAPE<br /><em>GAME</em><span class="escape-cursor">_</span></strong><span
+                  class="escape-preview-bottom">INFORMATIQUE <span>→ ENTRER DANS LE JEU</span></span></div><span
+                class="project-number">11 / 17</span><span aria-hidden="true" class="project-arrow">↗</span>
             </div>
             <div class="project-info">
               <div>
@@ -237,51 +250,137 @@
             </div>
           </button>
         </article>
+        <article class="project-card" data-category="graphisme" data-project="dithyrambos"><button
+            aria-label="Voir le projet Dithyrambos" class="project-open" type="button">
+            <div class="project-visual visual-dithyrambos project-visual-contained"><img
+                alt="Logo Dithyrambos, vins naturels, en format vertical" loading="lazy"
+                src="assets/logo-dithyrambos-vertical.png" /><span class="project-number">12 / 17</span><span
+                aria-hidden="true" class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">GRAPHISME · IDENTITÉ VISUELLE</p>
+                <h3>Dithyrambos</h3>
+                <p>Un logo expressif pour une marque de vins naturels.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
+        <article class="project-card" data-category="web communication" data-project="pollution"><button
+            aria-label="Voir le projet Pollution plastique" class="project-open" type="button">
+            <div class="project-visual visual-pollution project-visual-contained"><img
+                alt="Illustration du projet Pollution plastique avec un poisson et des déchets marins" loading="lazy"
+                src="assets/pollution-marine.png" /><span class="project-number">13 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">DÉVELOPPEMENT WEB · PRÉSENTATION</p>
+                <h3>Pollution plastique</h3>
+                <p>Une présentation interactive sur la pollution des océans.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
+        <article class="project-card" data-category="graphisme communication" data-project="depliant"><button
+            aria-label="Voir le projet Dépliant BUT MMI" class="project-open" type="button">
+            <div class="project-visual visual-depliant project-visual-contained"><img
+                alt="Recto du dépliant trois volets de présentation du BUT MMI Lannion" loading="lazy"
+                src="assets/depliant-mmi-recto.png" /><span class="project-number">14 / 17</span><span
+                aria-hidden="true" class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">GRAPHISME · COMMUNICATION PRINT</p>
+                <h3>Dépliant BUT MMI</h3>
+                <p>Un dépliant trois volets pour présenter la formation MMI.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
+        <article class="project-card" data-category="web" data-project="arbres"><button
+            aria-label="Voir le projet Arbres remarquables" class="project-open" type="button">
+            <div class="project-visual visual-arbres project-visual-contained"><img
+                alt="Capture de la carte interactive des arbres remarquables des Côtes-d’Armor" loading="lazy"
+                src="assets/arbres-remarquables.png" /><span class="project-number">15 / 17</span><span
+                aria-hidden="true" class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">DÉVELOPPEMENT WEB · CARTE INTERACTIVE</p>
+                <h3>Arbres remarquables</h3>
+                <p>Une carte interactive des arbres remarquables des Côtes-d’Armor.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
+        <article class="project-card" data-category="web communication" data-project="curiopop"><button
+            aria-label="Voir le projet Curio Pop" class="project-open" type="button">
+            <div class="project-visual visual-curiopop project-visual-contained"><img alt="Logo coloré Curio Pop"
+                loading="lazy" src="assets/curio-pop.png" /><span class="project-number">16 / 17</span><span
+                aria-hidden="true" class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">WEB DESIGN · WORDPRESS</p>
+                <h3>Curio Pop</h3>
+                <p>Un site WordPress consacré à la culture populaire.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
+        <article class="project-card" data-category="graphisme communication" data-project="science"><button
+            aria-label="Voir le projet La lumière et nos aliments" class="project-open" type="button">
+            <div class="project-visual visual-science project-visual-contained project-visual-dark"><img
+                alt="Affiche scientifique La lumière au service de nos aliments" loading="lazy"
+                src="assets/affiche-science.png" /><span class="project-number">17 / 17</span><span aria-hidden="true"
+                class="project-arrow">↗</span></div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">GRAPHISME · INFOGRAPHIE</p>
+                <h3>La lumière et nos aliments</h3>
+                <p>Une affiche scientifique sur la spectroscopie d’absorption.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button></article>
       </div>
     </section>
-
-    <section class="section expertise-section" id="expertises" aria-labelledby="expertise-title">
+    <section aria-labelledby="expertise-title" class="section expertise-section" id="expertises">
       <div class="wrap">
         <div class="section-head">
           <div>
             <p class="eyebrow">02 / SAVOIR-FAIRE</p>
-            <h2 id="expertise-title">Plusieurs cordes<br><em>à mon arc.</em></h2>
+            <h2 id="expertise-title">Plusieurs cordes<br /><em>à mon arc.</em></h2>
           </div>
           <p class="section-intro">Une formation transversale qui me permet de passer de l’idée à la réalisation.</p>
         </div>
         <div class="expertise-grid">
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">⌘</span><span
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon">⌘</span><span
               class="expertise-n">01</span>
             <h3>Web &amp; UI/UX</h3>
             <p>Structurer l’information, dessiner des wireframes, créer des maquettes et intégrer des interfaces
               accessibles et responsives.</p><span class="skill-list">HTML / CSS · JavaScript · Figma · WordPress</span>
           </div>
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">✺</span><span
-              class="expertise-n">02</span>
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon"><svg aria-hidden="true"
+                class="star-icon" viewbox="0 0 24 24">
+                <use href="#icon-star"></use>
+              </svg></span><span class="expertise-n">02</span>
             <h3>Graphisme</h3>
             <p>Construire une identité visuelle, travailler la typographie et composer des affiches ou des contenus pour
               les réseaux sociaux.</p><span class="skill-list">Illustrator · Photoshop · Canva</span>
           </div>
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">◉</span><span
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon">◉</span><span
               class="expertise-n">03</span>
             <h3>Audiovisuel</h3>
             <p>Écrire un scénario et un storyboard, cadrer et enregistrer, puis monter un récit rythmé en image et en
               son.</p><span class="skill-list">DaVinci Resolve · CapCut · storyboard</span>
           </div>
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">✎</span><span
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon">✎</span><span
               class="expertise-n">04</span>
             <h3>Communication</h3>
             <p>Analyser une cible, auditer des supports, formuler des recommandations et bâtir une stratégie de
               diffusion cohérente.</p><span class="skill-list">Stratégie · audit · contenus</span>
           </div>
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">◷</span><span
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon">◷</span><span
               class="expertise-n">05</span>
             <h3>Gestion de projet</h3>
             <p>Définir des objectifs, répartir les rôles, planifier les étapes et adapter le travail collectif aux
               contraintes et aux retours.</p><span class="skill-list">Cahier des charges · organisation · équipe</span>
           </div>
-          <div class="expertise-card"><span class="expertise-icon" aria-hidden="true">✧</span><span
-              class="expertise-n">06</span>
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon"><svg aria-hidden="true"
+                class="star-icon" viewbox="0 0 24 24">
+                <use href="#icon-star"></use>
+              </svg></span><span class="expertise-n">06</span>
             <h3>Identité visuelle</h3>
             <p>Associer couleurs, formes et messages pour rendre un projet reconnaissable sur ses différents supports.
             </p><span class="skill-list">Recherche · direction artistique · déclinaisons</span>
@@ -289,15 +388,14 @@
         </div>
       </div>
     </section>
-
-    <section class="section about-section wrap" id="apropos" aria-labelledby="about-title">
+    <section aria-labelledby="about-title" class="section about-section wrap" id="apropos">
       <div class="about-visual">
-        <div class="about-frame"><img class="about-photo" src="assets/moi-2.png"
-            alt="Chiara en voyage devant les pyramides"></div>
+        <div class="about-frame"><img alt="Portrait de Chiara assise en terrasse, souriante" class="about-photo"
+            src="assets/chiara-apropos.jpg" /></div>
       </div>
       <div class="about-copy">
         <p class="eyebrow">03 / QUI JE SUIS</p>
-        <h2 id="about-title">Un peu plus<br><em>sur moi.</em></h2>
+        <h2 id="about-title">Un peu plus<br /><em>sur moi.</em></h2>
         <p class="about-lead">Je suis Chiara, étudiante en 2e année de BUT Métiers du Multimédia et de l’Internet à
           l’IUT de Lannion.</p>
         <p>J’aime comprendre comment les choses fonctionnent, imaginer des solutions et les rendre visibles. La
@@ -306,61 +404,66 @@
         <p>Sur un terrain de basket, mon rôle d’arbitre m’apprend à décider, communiquer et garder mon calme. Dans un
           projet créatif, je retrouve ce même plaisir de construire avec les autres.</p>
         <div class="about-highlights">
-          <div><span class="path-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.7" aria-hidden="true">
+          <div><span aria-hidden="true" class="path-icon"><svg fill="none" stroke="currentColor" stroke-width="1.7"
+                viewbox="0 0 24 24">
                 <path d="M3 21h18M5 21V6l7-3 7 3v15M9 9h1m4 0h1M9 13h1m4 0h1M10 21v-4h4v4" stroke-linecap="round"
-                  stroke-linejoin="round" />
+                  stroke-linejoin="round"></path>
               </svg></span>
             <div><strong>2025 → aujourd’hui</strong><span>BUT MMI · IUT de Lannion</span></div>
           </div>
-          <div><span class="path-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.7" aria-hidden="true">
-                <path d="M4 19h16M6 19V8l6-4 6 4v11M9 11h6M9 15h6" stroke-linecap="round" stroke-linejoin="round" />
+          <div><span aria-hidden="true" class="path-icon"><svg fill="none" stroke="currentColor" stroke-width="1.7"
+                viewbox="0 0 24 24">
+                <path d="M4 19h16M6 19V8l6-4 6 4v11M9 11h6M9 15h6" stroke-linecap="round" stroke-linejoin="round">
+                </path>
               </svg></span>
             <div><strong>2025</strong><span>Baccalauréat général · NSI / Physique-Chimie</span></div>
           </div>
-          <div><span class="path-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.6" aria-hidden="true">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 3c-2 3-2 6 0 9s2 6 0 9M3 12h18M5 6c3 2 5 4 7 6s4 4 7 6" stroke-linecap="round" />
+          <div><span aria-hidden="true" class="path-icon"><svg fill="none" stroke="currentColor" stroke-width="1.6"
+                viewbox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 3c-2 3-2 6 0 9s2 6 0 9M3 12h18M5 6c3 2 5 4 7 6s4 4 7 6" stroke-linecap="round"></path>
               </svg></span>
             <div><strong>Depuis 2024</strong><span>Arbitre départementale de basket</span></div>
           </div>
-        </div><a class="text-link" href="assets/CV_Chiara_Guégan.pdf" download>Mon parcours en détail <span
+        </div>
+        <a class="text-link" download="" href="assets/CV_Chiara_Guégan.pdf">Mon parcours en détail <span
             aria-hidden="true">↗</span></a>
       </div>
     </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <section aria-labelledby="contact-title" class="contact-section" id="contact">
       <div class="wrap contact-inner">
         <div>
           <p class="eyebrow">04 / CONTACT</p>
-          <h2 id="contact-title">On crée quelque chose<br><em>ensemble ?</em></h2>
+          <h2 id="contact-title">On crée quelque chose<br /><em>ensemble ?</em></h2>
           <p>Je recherche un stage d’avril à juin 2026 en web design ou en communication, à Lannion ou à Vannes. Parlons
             de votre projet !</p><a class="button button-light"
             href="mailto:chiaraguegan@free.fr?subject=Parlons%20de%20votre%20projet">M’écrire un message <span
               aria-hidden="true">↗</span></a>
         </div>
-        <div class="contact-card"><span class="contact-stamp" aria-hidden="true">✳</span>
-          <p>UNE IDÉE ? UN PROJET ?<br>UN SIMPLE BONJOUR ?</p><a
+        <div class="contact-card"><span aria-hidden="true" class="contact-stamp"><svg aria-hidden="true"
+              class="star-icon" viewbox="0 0 24 24">
+              <use href="#icon-star"></use>
+            </svg></span>
+          <p>UNE IDÉE ? UN PROJET ?<br />UN SIMPLE BONJOUR ?</p><a
             href="mailto:chiaraguegan@free.fr">chiaraguegan@free.fr</a><a
-            href="https://www.linkedin.com/in/chiara-guegan-01675b3b4" target="_blank"
-            rel="noopener noreferrer">Retrouvez-moi sur LinkedIn ↗</a><span class="contact-small">Lannion · Vannes ·
+            href="https://www.linkedin.com/in/chiara-guegan-01675b3b4" rel="noopener noreferrer"
+            target="_blank">Retrouvez-moi sur LinkedIn ↗</a><span class="contact-small">Lannion · Vannes ·
             Bretagne</span>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="footer">
-    <div class="wrap footer-inner"><a class="wordmark" href="#accueil" aria-label="Retour en haut"><span
-          class="wordmark-symbol">c<span class="brand-dot">.</span>g</span></a><span>Imaginé et développé avec soin
-        ✳</span><span>© <span id="year">2026</span> Chiara Guégan</span><a href="#accueil">Retour en haut ↑</a></div>
+    <div class="wrap footer-inner"><a aria-label="Retour en haut" class="wordmark" href="#accueil"><span
+          class="wordmark-symbol">c<span class="brand-dot">.</span>g</span></a><span>Imaginé et développé avec soin <svg
+          aria-hidden="true" class="star-icon" viewbox="0 0 24 24">
+          <use href="#icon-star"></use>
+        </svg></span><span>© <span id="year">2026</span> Chiara Guégan</span><a href="#accueil">Retour en haut ↑</a>
+    </div>
   </footer>
-
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-shell"><button class="dialog-close" type="button"
-        aria-label="Fermer les détails du projet">×</button>
+  <dialog aria-labelledby="dialog-title" class="project-dialog" id="project-dialog">
+    <div class="dialog-shell"><button aria-label="Fermer les détails du projet" class="dialog-close"
+        type="button">×</button>
       <div id="dialog-content"></div>
     </div>
   </dialog>
@@ -368,7 +471,8 @@
     <div class="dialog-heading"><span class="eyebrow">WEB DESIGN / DÉVELOPPEMENT</span>
       <h2 id="dialog-title">PokéZone<span>.</span></h2>
       <p>Un site web dédié à la collection et à la découverte de Pokémon.</p>
-    </div><img class="dialog-image" src="assets/pokezone.jpg" alt="Quatre captures d’écran du site PokéZone">
+    </div>
+    <img alt="Quatre captures d’écran du site PokéZone" class="dialog-image" src="assets/pokezone.jpg" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -395,6 +499,12 @@
         <p>Ce projet a renforcé ma logique de codage, mon autonomie et ma capacité à résoudre des problèmes concrets de
           conception.</p>
       </section>
+      <section>
+        <h3>Découvrir le projet</h3>
+        <p>Explorez le site directement en ligne.</p><a class="text-link"
+          href="https://chiaraguegan.github.io/pokemon_chiara_guegan/" rel="noopener noreferrer" target="_blank">Visiter
+          le site PokéZone ↗</a>
+      </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Figma · VS Code · HTML · CSS</span></p>
   </template>
@@ -402,8 +512,9 @@
     <div class="dialog-heading"><span class="eyebrow">GRAPHISME / COMMUNICATION</span>
       <h2 id="dialog-title">À l’West Fest<span>.</span></h2>
       <p>Une affiche pour promouvoir un festival multimédia étudiant.</p>
-    </div><img class="dialog-image dialog-poster" src="assets/affiche-west-fest.jpg"
-      alt="Affiche réalisée pour À l’West Fest">
+    </div>
+    <img alt="Affiche réalisée pour À l’West Fest" class="dialog-image dialog-poster"
+      src="assets/affiche-west-fest.jpg" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -436,8 +547,9 @@
     <div class="dialog-heading"><span class="eyebrow">AUDIOVISUEL / FICTION</span>
       <h2 id="dialog-title">Au-delà des apparences<span>.</span></h2>
       <p>Un court métrage de sensibilisation aux discriminations dans le monde professionnel.</p>
-    </div><video class="dialog-video" controls preload="metadata" poster="assets/film-discriminations.jpg">
-      <source src="assets/court-metrage.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la vidéo.
+    </div>
+    <video class="dialog-video" controls="" poster="assets/film-discriminations.jpg" preload="metadata">
+      <source src="assets/court-metrage.mp4" type="video/mp4" />Votre navigateur ne prend pas en charge la vidéo.
     </video>
     <div class="project-story">
       <section>
@@ -471,9 +583,9 @@
       <h2 id="dialog-title">Destination Cavan<span>.</span></h2>
       <p>Valoriser une commune de moins de 2 000 habitants auprès de visiteurs européens.</p>
     </div>
-    <div class="dialog-gallery"><img src="assets/cavan-cahier-des-charges.jpg"
-        alt="Couverture du cahier des charges pour Cavan"><img src="assets/cavan-parcours.jpg"
-        alt="Visuel du parcours de découverte de Cavan"></div>
+    <div class="dialog-gallery"><img alt="Couverture du cahier des charges pour Cavan"
+        src="assets/cavan-cahier-des-charges.jpg" /><img alt="Visuel du parcours de découverte de Cavan"
+        src="assets/cavan-parcours.jpg" /></div>
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -507,7 +619,8 @@
     <div class="dialog-heading"><span class="eyebrow">COMMUNICATION / ANALYSE</span>
       <h2 id="dialog-title">Le Grand Léjon<span>.</span></h2>
       <p>Un audit de la communication numérique d’une entreprise.</p>
-    </div><img class="dialog-image dialog-logo" src="assets/grand-lejon.jpg" alt="Logo du Grand Léjon">
+    </div>
+    <img alt="Logo du Grand Léjon" class="dialog-image dialog-logo" src="assets/grand-lejon.jpg" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -540,7 +653,8 @@
     <div class="dialog-heading"><span class="eyebrow">AUDIO / CULTURE NUMÉRIQUE</span>
       <h2 id="dialog-title">Culture Numérique<span>.</span></h2>
       <p>Un podcast collectif sur les nouvelles technologies et l’art.</p>
-    </div><img class="dialog-image dialog-podcast" src="assets/podcast.png" alt="Vignette du podcast Art & Fact">
+    </div>
+    <img alt="Vignette du podcast Art &amp; Fact" class="dialog-image dialog-podcast" src="assets/podcast.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -563,9 +677,9 @@
       </section>
       <section>
         <h3>Bilan</h3>
-        <p>J’ai appris à adapter un sujet complexe au format audio et à rendre mon expression orale plus précise.</p><a
-          class="text-link" href="https://www.youtube.com/watch?v=6v9C2QARY0U" target="_blank"
-          rel="noopener noreferrer">Écouter le podcast ↗</a>
+        <p>J’ai appris à adapter un sujet complexe au format audio et à rendre mon expression orale plus précise.</p> <a
+          class="text-link" href="https://www.youtube.com/watch?v=6v9C2QARY0U" rel="noopener noreferrer"
+          target="_blank">Écouter le podcast ↗</a>
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Google Docs · Canva</span></p>
@@ -574,8 +688,9 @@
     <div class="dialog-heading"><span class="eyebrow">WEB DESIGN / DÉVELOPPEMENT</span>
       <h2 id="dialog-title">Voyage &amp; destinations<span>.</span></h2>
       <p>Un site web pour découvrir et comparer différentes destinations touristiques.</p>
-    </div><img class="dialog-image" src="assets/site-voyage.jpg"
-      alt="Capture du site web de voyage avec ses cartes de destinations">
+    </div>
+    <img alt="Capture du site web de voyage avec ses cartes de destinations" class="dialog-image"
+      src="assets/site-voyage.jpg" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -602,6 +717,12 @@
         <p>J’ai consolidé mes bases de développement web et appris à mieux organiser les contenus en fonction des
           besoins des visiteurs.</p>
       </section>
+      <section>
+        <h3>Découvrir le projet</h3>
+        <p>Retrouvez le site Voyage &amp; destinations en ligne.</p><a class="text-link"
+          href="https://chiaraguegan.github.io/voyage_guegan_chiara/" rel="noopener noreferrer" target="_blank">Visiter
+          le site Voyage ↗</a>
+      </section>
     </div>
     <p class="project-tools">Outils utilisés <span>HTML · CSS · Bulma · VS Code · Figma</span></p>
   </template>
@@ -611,7 +732,7 @@
       <p>Faire connaître un festival multimédia étudiant grâce à une communication suivie pendant plusieurs semaines.
       </p>
     </div>
-    <img class="dialog-image dialog-poster" src="assets/audit-west-fest.jpg" alt="Visuel du festival À l’West Fest">
+    <img alt="Visuel du festival À l’West Fest" class="dialog-image dialog-poster" src="assets/audit-west-fest.jpg" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -636,8 +757,8 @@
       <section>
         <h3>Bilan</h3>
         <p>Cette expérience m’a appris à garder une ligne de communication claire dans la durée et à adapter les
-          contenus aux différentes étapes d’un événement.</p><a class="text-link"
-          href="https://www.instagram.com/but_mmi_lannion/" target="_blank" rel="noopener noreferrer">Voir le compte
+          contenus aux différentes étapes d’un événement.</p> <a class="text-link"
+          href="https://www.instagram.com/but_mmi_lannion/" rel="noopener noreferrer" target="_blank">Voir le compte
           Instagram du BUT MMI Lannion ↗</a>
       </section>
     </div>
@@ -648,8 +769,8 @@
       <h2 id="dialog-title">Les Bon-bons<span>.</span></h2>
       <p>Un prototype de site pour un réseau de boutiques de confiserie, réalisé en binôme.</p>
     </div>
-    <img class="dialog-image dialog-site" src="assets/les-bonbons-site.png"
-      alt="Page d’accueil du site Les Bon-bons avec son univers fruité et son logo de bonbon vert">
+    <img alt="Page d’accueil du site Les Bon-bons avec son univers fruité et son logo de bonbon vert"
+      class="dialog-image dialog-site" src="assets/les-bonbons-site.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -674,22 +795,21 @@
       <section>
         <h3>Bilan</h3>
         <p>Ce projet m’a appris à relier l’identité graphique d’une marque à des fonctionnalités concrètes, en pensant à
-          la fois aux clients et aux gérants.</p><a class="text-link"
-          href="https://bon-bonscom-production.up.railway.app/page_catalogue1.php" target="_blank"
-          rel="noopener noreferrer">Visiter le site Les Bon-bons ↗</a>
+          la fois aux clients et aux gérants.</p> <a class="text-link"
+          href="https://bon-bonscom-production.up.railway.app/page_catalogue1.php" rel="noopener noreferrer"
+          target="_blank">Visiter le site Les Bon-bons ↗</a>
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Figma · HTML · CSS · PHP · JavaScript · SQL</span></p>
   </template>
-
   <template id="detail-novacook">
     <div class="dialog-heading"><span class="eyebrow">SAE 202 / STRATÉGIE &amp; AUDIOVISUEL</span>
       <h2 id="dialog-title">Novacook<span>.</span></h2>
       <p>Une simulation d’entreprise devenue une publicité vidéo de 45 secondes.</p>
     </div>
-    <video class="dialog-video" controls preload="metadata" poster="assets/novacook-affiche.jpg">
-      <source src="assets/novacook-publicite.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de
-      cette vidéo.
+    <video class="dialog-video" controls="" poster="assets/novacook-affiche.jpg" preload="metadata">
+      <source src="assets/novacook-publicite.mp4" type="video/mp4" />Votre navigateur ne prend pas en charge la lecture
+      de cette vidéo.
     </video>
     <div class="project-story">
       <section>
@@ -725,11 +845,10 @@
       <h2 id="dialog-title">Escape game informatique<span>.</span></h2>
       <p>Un jeu en ligne créé en première pour apprendre les bases du HTML.</p>
     </div>
-    <div class="escape-preview escape-dialog-preview" role="img"
-      aria-label="Visuel typographique de l’escape game informatique"><span class="escape-preview-top">PROJET DE
-        PREMIÈRE <span>HTML / 01</span></span><strong>ESCAPE<br><em>GAME</em><span
-          class="escape-cursor">_</span></strong><span class="escape-preview-bottom">INFORMATIQUE <span>→ ENTRER DANS LE
-          JEU</span></span></div>
+    <div aria-label="Visuel de l’escape game informatique" class="escape-preview escape-dialog-preview"><span
+        class="escape-preview-top">PROJET DE PREMIÈRE <span>HTML /
+          01</span></span><strong>ESCAPE<br /><em>GAME</em><span class="escape-cursor">_</span></strong><span
+        class="escape-preview-bottom">INFORMATIQUE <span>→ ENTRER DANS LE JEU</span></span></div>
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -748,12 +867,242 @@
       </section>
       <section>
         <h3>Découvrir le projet</h3>
-        <p>Ce premier site montre mes débuts dans la création web.</p><a class="text-link"
-          href="https://hilarious-profiterole-8f4a21.netlify.app/" target="_blank" rel="noopener noreferrer">Jouer à
+        <p>Ce premier site montre mes débuts dans la création web.</p> <a class="text-link"
+          href="https://hilarious-profiterole-8f4a21.netlify.app/" rel="noopener noreferrer" target="_blank">Jouer à
           l’escape game ↗</a>
       </section>
     </div>
     <p class="project-tools">Premiers outils <span>HTML · organisation des pages · navigation</span></p>
+  </template>
+  <template id="detail-dithyrambos">
+    <div class="dialog-heading"><span class="eyebrow">GRAPHISME / IDENTITÉ VISUELLE</span>
+      <h2 id="dialog-title">Dithyrambos<span>.</span></h2>
+      <p>Un logo pour un projet autour des vins naturels.</p>
+    </div><img alt="Logo Dithyrambos, vins naturels, en format vertical"
+      class="dialog-image dialog-poster dialog-contained" src="assets/logo-dithyrambos-vertical.png" />
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai réalisé un logo pour Dithyrambos, un projet autour des vins naturels. L’objectif était de créer une
+          identité visuelle reconnaissable, en associant l’univers du vin à une composition graphique originale et
+          expressive.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Analyser le nom et l’univers de la marque.</li>
+          <li>Rechercher des idées graphiques et typographiques.</li>
+          <li>Concevoir un symbole inspiré du vin et du verre.</li>
+          <li>Finaliser le logo avec une palette rouge, noire et blanche.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Concevoir une identité visuelle, travailler la typographie, associer des formes et des couleurs et créer un
+          logo identifiable.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a permis de développer ma créativité et de mieux comprendre comment traduire l’univers d’une
+          marque à travers un symbole graphique.</p>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>Création graphique · typographie · composition</span></p>
+  </template>
+  <template id="detail-pollution">
+    <div class="dialog-heading"><span class="eyebrow">DÉVELOPPEMENT WEB / PRÉSENTATION INTERACTIVE</span>
+      <h2 id="dialog-title">Pollution plastique<span>.</span></h2>
+      <p>Une présentation interactive sur la pollution plastique dans les océans.</p>
+    </div><img alt="Illustration du projet Pollution plastique avec un poisson et des déchets marins"
+      class="dialog-image dialog-contained" src="assets/pollution-marine.png" />
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai développé une présentation interactive sur la pollution plastique dans les océans. L’objectif était
+          d’expliquer les origines et les conséquences de cette pollution à travers une expérience visuelle, animée et
+          accessible.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Rechercher et organiser les informations sur la pollution marine.</li>
+          <li>Définir les différentes parties de la présentation.</li>
+          <li>Concevoir les illustrations et les éléments graphiques.</li>
+          <li>Intégrer les contenus et les transitions avec Impress.js.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Structurer une présentation numérique, intégrer des animations, utiliser HTML, CSS et JavaScript et organiser
+          une narration visuelle.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a permis de découvrir une nouvelle manière de présenter des informations, en associant
+          développement web, animations et communication visuelle.</p>
+      </section>
+      <section>
+        <h3>Découvrir le projet</h3>
+        <p>Retrouvez le projet directement en ligne.</p><a class="text-link"
+          href="https://chiaraguegan.github.io/polution_marine_chiara_guegan/#/intro" rel="noopener noreferrer"
+          target="_blank">Visiter la présentation Pollution marine ↗</a>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>HTML · CSS · JavaScript · Impress.js</span></p>
+  </template>
+  <template id="detail-depliant">
+    <div class="dialog-heading"><span class="eyebrow">GRAPHISME / COMMUNICATION PRINT</span>
+      <h2 id="dialog-title">Dépliant BUT MMI<span>.</span></h2>
+      <p>Un dépliant pour faire découvrir le BUT MMI de Lannion.</p>
+    </div>
+    <div class="dialog-gallery dialog-gallery-two"><img
+        alt="Recto du dépliant trois volets de présentation du BUT MMI Lannion"
+        src="assets/depliant-mmi-recto.png" /><img
+        alt="Verso du dépliant trois volets de présentation du BUT MMI Lannion" src="assets/depliant-mmi-verso.png" />
+    </div>
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai conçu un dépliant de présentation du BUT MMI de Lannion, destiné aux futurs étudiants et aux
+          partenaires. L’objectif était de valoriser la formation et ses débouchés à travers un support imprimé clair,
+          attractif et professionnel.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Analyser les contenus et les contraintes du dépliant.</li>
+          <li>Réaliser une maquette et organiser les six volets.</li>
+          <li>Définir une identité graphique et une hiérarchie visuelle.</li>
+          <li>Intégrer les textes, illustrations et photographies.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Concevoir une mise en page imprimée, hiérarchiser les informations, travailler les couleurs et la typographie
+          et respecter des contraintes techniques.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a appris à organiser une grande quantité d’informations sur un espace limité, tout en conservant
+          une identité visuelle cohérente.</p>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>Mise en page · typographie · infographie</span></p>
+  </template>
+  <template id="detail-arbres">
+    <div class="dialog-heading"><span class="eyebrow">DÉVELOPPEMENT WEB / INTÉGRATION</span>
+      <h2 id="dialog-title">Arbres remarquables<span>.</span></h2>
+      <p>Une carte interactive pour explorer les arbres remarquables des Côtes-d’Armor.</p>
+    </div><img alt="Capture de la carte interactive des arbres remarquables des Côtes-d’Armor"
+      class="dialog-image dialog-contained" src="assets/arbres-remarquables.png" />
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai développé une carte interactive présentant les arbres remarquables des Côtes-d’Armor. L’objectif était
+          de rendre des données géographiques accessibles et de permettre aux utilisateurs de découvrir les
+          caractéristiques de chaque arbre.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Récupérer les données des arbres depuis une API.</li>
+          <li>Créer la structure de la page en HTML et CSS.</li>
+          <li>Intégrer une carte interactive avec Leaflet.</li>
+          <li>Afficher les informations des arbres au clic sur les marqueurs.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Manipuler des données JSON, utiliser une API, intégrer une bibliothèque JavaScript et créer des interactions
+          avec les utilisateurs.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a permis de mieux comprendre l’utilisation des API et de développer mes compétences en JavaScript
+          à travers une application concrète.</p>
+      </section>
+      <section>
+        <h3>Découvrir le projet</h3>
+        <p>Retrouvez le projet directement en ligne.</p><a class="text-link"
+          href="https://chiaraguegan.github.io/projet_chiara_guegan/" rel="noopener noreferrer" target="_blank">Visiter
+          la carte des arbres remarquables ↗</a>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>HTML · CSS · JavaScript · Leaflet · API</span></p>
+  </template>
+  <template id="detail-curiopop">
+    <div class="dialog-heading"><span class="eyebrow">WEB DESIGN / WORDPRESS / COMMUNICATION</span>
+      <h2 id="dialog-title">Curio Pop<span>.</span></h2>
+      <p>Un site WordPress pour découvrir la culture populaire et des sujets insolites.</p>
+    </div><img alt="Logo coloré Curio Pop" class="dialog-image dialog-contained" src="assets/curio-pop.png" />
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai participé à la création de Curio Pop, un site WordPress consacré à la culture populaire et aux sujets
+          insolites. L’objectif était de proposer un espace de découverte agréable, avec des contenus organisés en
+          différentes catégories.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Définir le concept et les thématiques du site.</li>
+          <li>Organiser les rubriques et la navigation.</li>
+          <li>Concevoir la présentation visuelle des pages.</li>
+          <li>Intégrer les contenus et personnaliser le site sur WordPress.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Utiliser WordPress, organiser une arborescence, structurer des contenus éditoriaux et concevoir une interface
+          adaptée à la lecture.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a permis de développer mes compétences sur WordPress et de mieux comprendre l'importance de
+          l'organisation des contenus dans un site éditorial.</p>
+      </section>
+      <section>
+        <h3>Découvrir le projet</h3>
+        <p>Retrouvez le projet directement en ligne.</p><a class="text-link" href="https://curiopop.wordpress.com/menu/"
+          rel="noopener noreferrer" target="_blank">Visiter Curio Pop ↗</a>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>WordPress · création de contenus · web design</span></p>
+  </template>
+  <template id="detail-science">
+    <div class="dialog-heading"><span class="eyebrow">GRAPHISME / INFOGRAPHIE / VULGARISATION</span>
+      <h2 id="dialog-title">La lumière et nos aliments<span>.</span></h2>
+      <p>Une affiche scientifique pour la Fête de la science 2026.</p>
+    </div><img alt="Affiche scientifique La lumière au service de nos aliments"
+      class="dialog-image dialog-poster dialog-contained dialog-dark" src="assets/affiche-science.png" />
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>J’ai réalisé une affiche pour la Fête de la science 2026 sur la spectroscopie d’absorption. L’objectif était
+          d’expliquer cette technique scientifique et ses applications alimentaires à travers un support visuel
+          accessible et attractif.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Rechercher et sélectionner les informations scientifiques.</li>
+          <li>Organiser les explications et les différentes étapes du phénomène.</li>
+          <li>Définir une identité graphique inspirée du spectre lumineux.</li>
+          <li>Intégrer les illustrations, schémas et textes explicatifs.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Vulgariser des informations complexes, créer une infographie, hiérarchiser les contenus et associer
+          illustrations et typographie.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a appris à transformer un sujet scientifique complexe en un support visuel compréhensible, tout
+          en développant mon sens de la composition graphique.</p>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>Infographie · mise en page · création visuelle</span></p>
   </template>
 </body>
 
