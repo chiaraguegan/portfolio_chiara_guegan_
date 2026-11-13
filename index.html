@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -16,6 +19,116 @@
     rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
   <script defer="" src="script.js"></script>
+  <style>
+    /* Les étoiles sont vectorielles : aucun remplacement par des emojis sur mobile. */
+    .star-icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: -.1em;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .marquee .star-icon {
+      width: 1em;
+      height: 1em;
+    }
+
+    .contact-stamp .star-icon {
+      width: 1em;
+      height: 1em;
+    }
+
+    /* Préservation des visuels complets et des deux faces du dépliant. */
+    .project-visual.project-visual-contained {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: #efe9f5;
+    }
+
+    .project-visual.project-visual-contained img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .project-visual.project-visual-dark {
+      background: #0f0c14;
+    }
+
+    .dialog-image.dialog-contained {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      background: #efe9f5;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .dialog-image.dialog-dark {
+      background: #0f0c14;
+    }
+
+    .dialog-gallery.dialog-gallery-two {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 0 0 24px;
+    }
+
+    .dialog-gallery.dialog-gallery-two img {
+      width: 100%;
+      display: block;
+      background: #efe9f5;
+      border-radius: 12px;
+      padding: 14px;
+      object-fit: contain;
+    }
+
+    @media (min-width:900px) {
+      .dialog-gallery.dialog-gallery-two {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Carte Trégor Cinéma : aperçu autonome, sans image supplémentaire. */
+    .visual-tregor {
+      background: #20152e;
+    }
+
+    .visual-tregor .tregor-preview {
+      width: 100%;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 45px 28px;
+      text-align: center;
+      color: #fff;
+      background: radial-gradient(circle at 52% 35%, #6c415f 0, #29162c 55%, #16101b 100%);
+    }
+
+    .tregor-preview .tregor-year {
+      font: 700 clamp(52px, 8vw, 100px)/1 'Space Grotesk', sans-serif;
+      letter-spacing: -.06em;
+      color: #ffb8a0;
+    }
+
+    .tregor-preview .tregor-title {
+      font: 700 clamp(18px, 2.7vw, 32px)/1.1 'Space Grotesk', sans-serif;
+      letter-spacing: .03em;
+    }
+
+    .tregor-preview .tregor-subtitle {
+      font: 600 12px/1.4 'DM Sans', sans-serif;
+      letter-spacing: .19em;
+    }
+  </style>
 </head>
 
 <body>
@@ -55,7 +168,7 @@
           <div class="hero-actions"><a class="button button-dark" href="#projets">Découvrir mes projets <span
                 aria-hidden="true">↘</span></a><a class="text-link" download=""
               href="assets/CV_Chiara_Guégan.pdf">Télécharger mon CV <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-footnote">En recherche de stage d’avril à juin 2027 <span class="hero-separator">/</span>
+          <div class="hero-footnote">En recherche de stage d’avril à juin 2026 <span class="hero-separator">/</span>
             Lannion et Vannes, Bretagne</div>
         </div>
         <div class="hero-art">
@@ -86,7 +199,7 @@
           études en MMI.</p>
       </div>
       <div aria-label="Filtrer les projets" class="filters" role="group"><button aria-pressed="true"
-          class="filter active" data-filter="tout" type="button">Tout voir <span>17</span></button><button
+          class="filter active" data-filter="tout" type="button">Tout voir <span>18</span></button><button
           aria-pressed="false" class="filter" data-filter="web" type="button">Web design</button><button
           aria-pressed="false" class="filter" data-filter="graphisme" type="button">Graphisme</button><button
           aria-pressed="false" class="filter" data-filter="audiovisuel" type="button">Audiovisuel</button><button
@@ -95,7 +208,7 @@
         <article class="project-card card-large" data-category="web" data-project="pokezone">
           <button aria-label="Voir le projet PokéZone" class="project-open" type="button">
             <div class="project-visual visual-poke"><img alt="Captures des pages du site PokéZone" loading="lazy"
-                src="assets/pokezone.jpg" /><span class="project-number">01 / 17</span><span aria-hidden="true"
+                src="assets/pokezone.jpg" /><span class="project-number">01 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -109,7 +222,7 @@
         <article class="project-card" data-category="graphisme communication" data-project="westfest">
           <button aria-label="Voir le projet À l’West Fest" class="project-open" type="button">
             <div class="project-visual visual-fest"><img alt="Affiche du festival étudiant À l’West Fest" loading="lazy"
-                src="assets/affiche-west-fest.jpg" /><span class="project-number">02 / 17</span><span aria-hidden="true"
+                src="assets/affiche-west-fest.jpg" /><span class="project-number">02 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -124,7 +237,7 @@
           <button aria-label="Voir le projet Au-delà des apparences" class="project-open" type="button">
             <div class="project-visual visual-film"><img alt="Image du court métrage" loading="lazy"
                 src="assets/film-discriminations.jpg" /><span aria-hidden="true" class="film-play">▶</span><span
-                class="project-number">03 / 17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
+                class="project-number">03 / 18</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">COURT MÉTRAGE · SENSIBILISATION</p>
@@ -138,7 +251,7 @@
           <button aria-label="Voir le projet Destination Cavan" class="project-open" type="button">
             <div class="project-visual visual-cavan"><img alt="Couverture du cahier des charges pour Cavan"
                 loading="lazy" src="assets/cavan-cahier-des-charges.jpg" /><span class="project-number">04 /
-                17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
+                18</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">STRATÉGIE · VALORISATION</p>
@@ -151,7 +264,7 @@
         <article class="project-card" data-category="communication web" data-project="audit">
           <button aria-label="Voir le projet Le Grand Léjon" class="project-open" type="button">
             <div class="project-visual visual-audit"><img alt="Logo du Grand Léjon" loading="lazy"
-                src="assets/grand-lejon.jpg" /><span class="project-number">05 / 17</span><span aria-hidden="true"
+                src="assets/grand-lejon.jpg" /><span class="project-number">05 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -165,7 +278,7 @@
         <article class="project-card" data-category="audiovisuel communication" data-project="podcast">
           <button aria-label="Voir le projet Culture Numérique" class="project-open" type="button">
             <div class="project-visual visual-podcast"><img alt="Vignette du podcast Art &amp; Fact" loading="lazy"
-                src="assets/podcast.png" /><span class="project-number">06 / 17</span><span aria-hidden="true"
+                src="assets/podcast.png" /><span class="project-number">06 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -179,7 +292,7 @@
         <article class="project-card" data-category="web" data-project="voyage">
           <button aria-label="Voir le projet Voyage &amp; destinations" class="project-open" type="button">
             <div class="project-visual visual-voyage"><img alt="Capture du site de voyage" loading="lazy"
-                src="assets/site-voyage.jpg" /><span class="project-number">07 / 17</span><span aria-hidden="true"
+                src="assets/site-voyage.jpg" /><span class="project-number">07 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -193,7 +306,7 @@
         <article class="project-card" data-category="communication" data-project="festivalcom">
           <button aria-label="Voir le projet La communication d’À l’West Fest" class="project-open" type="button">
             <div class="project-visual visual-festivalcom"><img alt="Visuel du festival À l’West Fest" loading="lazy"
-                src="assets/audit-west-fest.jpg" /><span class="project-number">08 / 17</span><span aria-hidden="true"
+                src="assets/audit-west-fest.jpg" /><span class="project-number">08 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -207,7 +320,7 @@
         <article class="project-card" data-category="web" data-project="bonbons">
           <button aria-label="Voir le projet Les Bon-bons" class="project-open" type="button">
             <div class="project-visual visual-bonbons"><img alt="Page d’accueil du site Les Bon-bons" loading="lazy"
-                src="assets/les-bonbons-site.png" /><span class="project-number">09 / 17</span><span aria-hidden="true"
+                src="assets/les-bonbons-site.png" /><span class="project-number">09 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -222,7 +335,7 @@
           <button aria-label="Voir le projet Novacook" class="project-open" type="button">
             <div class="project-visual visual-novacook"><img alt="Chiara dans la publicité Novacook" loading="lazy"
                 src="assets/novacook-affiche.jpg" /><span aria-hidden="true" class="film-play">▶</span><span
-                class="project-number">10 / 17</span><span aria-hidden="true" class="project-arrow">↗</span></div>
+                class="project-number">10 / 18</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">SAE 202 · PUBLICITÉ VIDÉO</p>
@@ -239,7 +352,7 @@
                   class="escape-preview-top">PROJET DE PREMIÈRE <span>HTML /
                     01</span></span><strong>ESCAPE<br /><em>GAME</em><span class="escape-cursor">_</span></strong><span
                   class="escape-preview-bottom">INFORMATIQUE <span>→ ENTRER DANS LE JEU</span></span></div><span
-                class="project-number">11 / 17</span><span aria-hidden="true" class="project-arrow">↗</span>
+                class="project-number">11 / 18</span><span aria-hidden="true" class="project-arrow">↗</span>
             </div>
             <div class="project-info">
               <div>
@@ -253,8 +366,8 @@
         <article class="project-card" data-category="graphisme" data-project="dithyrambos"><button
             aria-label="Voir le projet Dithyrambos" class="project-open" type="button">
             <div class="project-visual visual-dithyrambos project-visual-contained"><img
-                alt="Logo Dithyrambos, vins naturels, en format vertical" loading="lazy"
-                src="assets/logo-dithyrambos-vertical.png" /><span class="project-number">12 / 17</span><span
+                alt="Logo Dithyrambos en format vertical" loading="lazy"
+                src="assets/logo-dithyrambos-vertical.png" /><span class="project-number">12 / 18</span><span
                 aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -267,8 +380,8 @@
         <article class="project-card" data-category="web communication" data-project="pollution"><button
             aria-label="Voir le projet Pollution plastique" class="project-open" type="button">
             <div class="project-visual visual-pollution project-visual-contained"><img
-                alt="Illustration du projet Pollution plastique avec un poisson et des déchets marins" loading="lazy"
-                src="assets/pollution-marine.png" /><span class="project-number">13 / 17</span><span aria-hidden="true"
+                alt="Illustration du poisson et de la pollution marine" loading="lazy"
+                src="assets/pollution-marine.png" /><span class="project-number">13 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -281,9 +394,8 @@
         <article class="project-card" data-category="graphisme communication" data-project="depliant"><button
             aria-label="Voir le projet Dépliant BUT MMI" class="project-open" type="button">
             <div class="project-visual visual-depliant project-visual-contained"><img
-                alt="Recto du dépliant trois volets de présentation du BUT MMI Lannion" loading="lazy"
-                src="assets/depliant-mmi-recto.png" /><span class="project-number">14 / 17</span><span
-                aria-hidden="true" class="project-arrow">↗</span></div>
+                alt="Recto du dépliant trois volets BUT MMI" loading="lazy" src="assets/depliant-mmi-recto.png" /><span
+                class="project-number">14 / 18</span><span aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
                 <p class="project-type">GRAPHISME · COMMUNICATION PRINT</p>
@@ -295,8 +407,8 @@
         <article class="project-card" data-category="web" data-project="arbres"><button
             aria-label="Voir le projet Arbres remarquables" class="project-open" type="button">
             <div class="project-visual visual-arbres project-visual-contained"><img
-                alt="Capture de la carte interactive des arbres remarquables des Côtes-d’Armor" loading="lazy"
-                src="assets/arbres-remarquables.png" /><span class="project-number">15 / 17</span><span
+                alt="Capture de la carte des arbres remarquables" loading="lazy"
+                src="assets/arbres-remarquables.png" /><span class="project-number">15 / 18</span><span
                 aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -309,7 +421,7 @@
         <article class="project-card" data-category="web communication" data-project="curiopop"><button
             aria-label="Voir le projet Curio Pop" class="project-open" type="button">
             <div class="project-visual visual-curiopop project-visual-contained"><img alt="Logo coloré Curio Pop"
-                loading="lazy" src="assets/curio-pop.png" /><span class="project-number">16 / 17</span><span
+                loading="lazy" src="assets/curio-pop.png" /><span class="project-number">16 / 18</span><span
                 aria-hidden="true" class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -323,7 +435,7 @@
             aria-label="Voir le projet La lumière et nos aliments" class="project-open" type="button">
             <div class="project-visual visual-science project-visual-contained project-visual-dark"><img
                 alt="Affiche scientifique La lumière au service de nos aliments" loading="lazy"
-                src="assets/affiche-science.png" /><span class="project-number">17 / 17</span><span aria-hidden="true"
+                src="assets/affiche-science.png" /><span class="project-number">17 / 18</span><span aria-hidden="true"
                 class="project-arrow">↗</span></div>
             <div class="project-info">
               <div>
@@ -333,6 +445,23 @@
               </div><span class="project-link">Voir le projet ↗</span>
             </div>
           </button></article>
+        <article class="project-card" data-category="audiovisuel communication" data-project="tregor-cinema">
+          <button aria-label="Voir le projet Vœux Trégor Cinéma 2027" class="project-open" type="button">
+            <div class="project-visual visual-tregor">
+              <div aria-hidden="true" class="tregor-preview"><span class="tregor-subtitle">TRÉGOR CINÉMA</span><strong
+                  class="tregor-year">2027</strong><span class="tregor-title">BONNE ANNÉE !</span><span
+                  class="tregor-subtitle">STOP MOTION · VŒUX</span></div><span class="project-number">18 /
+                18</span><span aria-hidden="true" class="project-arrow">↗</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-type">AUDIOVISUEL · STOP MOTION</p>
+                <h3>Trégor Cinéma — Vœux 2027</h3>
+                <p>Une vidéo de vœux créative pour souhaiter la bonne année à travers le stop motion.</p>
+              </div><span class="project-link">Voir le projet ↗</span>
+            </div>
+          </button>
+        </article>
       </div>
     </section>
     <section aria-labelledby="expertise-title" class="section expertise-section" id="expertises">
@@ -345,7 +474,8 @@
           <p class="section-intro">Une formation transversale qui me permet de passer de l’idée à la réalisation.</p>
         </div>
         <div class="expertise-grid">
-          <div class="expertise-card"><use href="#icon-star"></use><span class="expertise-n">01</span>
+          <div class="expertise-card"><span aria-hidden="true" class="expertise-icon">⌘</span><span
+              class="expertise-n">01</span>
             <h3>Web &amp; UI/UX</h3>
             <p>Structurer l’information, dessiner des wireframes, créer des maquettes et intégrer des interfaces
               accessibles et responsives.</p><span class="skill-list">HTML / CSS · JavaScript · Figma · WordPress</span>
@@ -389,7 +519,7 @@
     </section>
     <section aria-labelledby="about-title" class="section about-section wrap" id="apropos">
       <div class="about-visual">
-        <div class="about-frame"><img alt="Portrait de Chiara assise en terrasse, souriante" class="about-photo"
+        <div class="about-frame"><img alt="Chiara souriante en terrasse" class="about-photo"
             src="assets/chiara-apropos.jpg" /></div>
       </div>
       <div class="about-copy">
@@ -506,8 +636,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Figma · VS Code · HTML · CSS</span></p>
-  </template>
-  <template id="detail-westfest">
+  </template> <template id="detail-westfest">
     <div class="dialog-heading"><span class="eyebrow">GRAPHISME / COMMUNICATION</span>
       <h2 id="dialog-title">À l’West Fest<span>.</span></h2>
       <p>Une affiche pour promouvoir un festival multimédia étudiant.</p>
@@ -541,8 +670,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Canva · Photoshop · Illustrator</span></p>
-  </template>
-  <template id="detail-film">
+  </template> <template id="detail-film">
     <div class="dialog-heading"><span class="eyebrow">AUDIOVISUEL / FICTION</span>
       <h2 id="dialog-title">Au-delà des apparences<span>.</span></h2>
       <p>Un court métrage de sensibilisation aux discriminations dans le monde professionnel.</p>
@@ -576,8 +704,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>DaVinci Resolve</span></p>
-  </template>
-  <template id="detail-cavan">
+  </template> <template id="detail-cavan">
     <div class="dialog-heading"><span class="eyebrow">STRATÉGIE / TERRITOIRE</span>
       <h2 id="dialog-title">Destination Cavan<span>.</span></h2>
       <p>Valoriser une commune de moins de 2 000 habitants auprès de visiteurs européens.</p>
@@ -613,8 +740,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Google Docs · Canva</span></p>
-  </template>
-  <template id="detail-audit">
+  </template> <template id="detail-audit">
     <div class="dialog-heading"><span class="eyebrow">COMMUNICATION / ANALYSE</span>
       <h2 id="dialog-title">Le Grand Léjon<span>.</span></h2>
       <p>Un audit de la communication numérique d’une entreprise.</p>
@@ -647,8 +773,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Google Docs · Canva</span></p>
-  </template>
-  <template id="detail-podcast">
+  </template> <template id="detail-podcast">
     <div class="dialog-heading"><span class="eyebrow">AUDIO / CULTURE NUMÉRIQUE</span>
       <h2 id="dialog-title">Culture Numérique<span>.</span></h2>
       <p>Un podcast collectif sur les nouvelles technologies et l’art.</p>
@@ -682,8 +807,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Google Docs · Canva</span></p>
-  </template>
-  <template id="detail-voyage">
+  </template> <template id="detail-voyage">
     <div class="dialog-heading"><span class="eyebrow">WEB DESIGN / DÉVELOPPEMENT</span>
       <h2 id="dialog-title">Voyage &amp; destinations<span>.</span></h2>
       <p>Un site web pour découvrir et comparer différentes destinations touristiques.</p>
@@ -724,8 +848,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>HTML · CSS · Bulma · VS Code · Figma</span></p>
-  </template>
-  <template id="detail-festivalcom">
+  </template> <template id="detail-festivalcom">
     <div class="dialog-heading"><span class="eyebrow">COMMUNICATION / ÉVÉNEMENTIEL</span>
       <h2 id="dialog-title">À l’West Fest<span>.</span></h2>
       <p>Faire connaître un festival multimédia étudiant grâce à une communication suivie pendant plusieurs semaines.
@@ -762,8 +885,7 @@
       </section>
     </div>
     <p class="project-tools">Supports <span>Visuels · publications · calendrier de communication</span></p>
-  </template>
-  <template id="detail-bonbons">
+  </template> <template id="detail-bonbons">
     <div class="dialog-heading"><span class="eyebrow">SAE 203 / WEB &amp; UI/UX</span>
       <h2 id="dialog-title">Les Bon-bons<span>.</span></h2>
       <p>Un prototype de site pour un réseau de boutiques de confiserie, réalisé en binôme.</p>
@@ -800,8 +922,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Figma · HTML · CSS · PHP · JavaScript · SQL</span></p>
-  </template>
-  <template id="detail-novacook">
+  </template> <template id="detail-novacook">
     <div class="dialog-heading"><span class="eyebrow">SAE 202 / STRATÉGIE &amp; AUDIOVISUEL</span>
       <h2 id="dialog-title">Novacook<span>.</span></h2>
       <p>Une simulation d’entreprise devenue une publicité vidéo de 45 secondes.</p>
@@ -838,8 +959,7 @@
       </section>
     </div>
     <p class="project-tools">Format <span>Simulation d’entreprise · campagne · tournage · montage vidéo</span></p>
-  </template>
-  <template id="detail-escape-game">
+  </template> <template id="detail-escape-game">
     <div class="dialog-heading"><span class="eyebrow">PROJET DE PREMIÈRE / DÉCOUVERTE DU WEB</span>
       <h2 id="dialog-title">Escape game informatique<span>.</span></h2>
       <p>Un jeu en ligne créé en première pour apprendre les bases du HTML.</p>
@@ -877,8 +997,8 @@
     <div class="dialog-heading"><span class="eyebrow">GRAPHISME / IDENTITÉ VISUELLE</span>
       <h2 id="dialog-title">Dithyrambos<span>.</span></h2>
       <p>Un logo pour un projet autour des vins naturels.</p>
-    </div><img alt="Logo Dithyrambos, vins naturels, en format vertical"
-      class="dialog-image dialog-poster dialog-contained" src="assets/logo-dithyrambos-vertical.png" />
+    </div><img alt="Logo Dithyrambos en format vertical" class="dialog-image dialog-contained dialog-poster"
+      src="assets/logo-dithyrambos-vertical.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -907,13 +1027,12 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Création graphique · typographie · composition</span></p>
-  </template>
-  <template id="detail-pollution">
+  </template><template id="detail-pollution">
     <div class="dialog-heading"><span class="eyebrow">DÉVELOPPEMENT WEB / PRÉSENTATION INTERACTIVE</span>
       <h2 id="dialog-title">Pollution plastique<span>.</span></h2>
       <p>Une présentation interactive sur la pollution plastique dans les océans.</p>
-    </div><img alt="Illustration du projet Pollution plastique avec un poisson et des déchets marins"
-      class="dialog-image dialog-contained" src="assets/pollution-marine.png" />
+    </div><img alt="Illustration du poisson et de la pollution marine" class="dialog-image dialog-contained"
+      src="assets/pollution-marine.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -948,17 +1067,14 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>HTML · CSS · JavaScript · Impress.js</span></p>
-  </template>
-  <template id="detail-depliant">
+  </template><template id="detail-depliant">
     <div class="dialog-heading"><span class="eyebrow">GRAPHISME / COMMUNICATION PRINT</span>
       <h2 id="dialog-title">Dépliant BUT MMI<span>.</span></h2>
       <p>Un dépliant pour faire découvrir le BUT MMI de Lannion.</p>
     </div>
-    <div class="dialog-gallery dialog-gallery-two"><img
-        alt="Recto du dépliant trois volets de présentation du BUT MMI Lannion"
-        src="assets/depliant-mmi-recto.png" /><img
-        alt="Verso du dépliant trois volets de présentation du BUT MMI Lannion" src="assets/depliant-mmi-verso.png" />
-    </div>
+    <div class="dialog-gallery dialog-gallery-two"><img alt="Recto du dépliant BUT MMI"
+        src="assets/depliant-mmi-recto.png" /><img alt="Verso du dépliant BUT MMI"
+        src="assets/depliant-mmi-verso.png" /></div>
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -987,13 +1103,12 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Mise en page · typographie · infographie</span></p>
-  </template>
-  <template id="detail-arbres">
+  </template><template id="detail-arbres">
     <div class="dialog-heading"><span class="eyebrow">DÉVELOPPEMENT WEB / INTÉGRATION</span>
       <h2 id="dialog-title">Arbres remarquables<span>.</span></h2>
       <p>Une carte interactive pour explorer les arbres remarquables des Côtes-d’Armor.</p>
-    </div><img alt="Capture de la carte interactive des arbres remarquables des Côtes-d’Armor"
-      class="dialog-image dialog-contained" src="assets/arbres-remarquables.png" />
+    </div><img alt="Capture de la carte des arbres remarquables" class="dialog-image dialog-contained"
+      src="assets/arbres-remarquables.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -1028,8 +1143,7 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>HTML · CSS · JavaScript · Leaflet · API</span></p>
-  </template>
-  <template id="detail-curiopop">
+  </template><template id="detail-curiopop">
     <div class="dialog-heading"><span class="eyebrow">WEB DESIGN / WORDPRESS / COMMUNICATION</span>
       <h2 id="dialog-title">Curio Pop<span>.</span></h2>
       <p>Un site WordPress pour découvrir la culture populaire et des sujets insolites.</p>
@@ -1067,13 +1181,12 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>WordPress · création de contenus · web design</span></p>
-  </template>
-  <template id="detail-science">
+  </template><template id="detail-science">
     <div class="dialog-heading"><span class="eyebrow">GRAPHISME / INFOGRAPHIE / VULGARISATION</span>
       <h2 id="dialog-title">La lumière et nos aliments<span>.</span></h2>
       <p>Une affiche scientifique pour la Fête de la science 2026.</p>
     </div><img alt="Affiche scientifique La lumière au service de nos aliments"
-      class="dialog-image dialog-poster dialog-contained dialog-dark" src="assets/affiche-science.png" />
+      class="dialog-image dialog-contained dialog-poster dialog-dark" src="assets/affiche-science.png" />
     <div class="project-story">
       <section>
         <h3>Contexte</h3>
@@ -1102,6 +1215,43 @@
       </section>
     </div>
     <p class="project-tools">Outils utilisés <span>Infographie · mise en page · création visuelle</span></p>
+  </template><template id="detail-tregor-cinema">
+    <div class="dialog-heading"><span class="eyebrow">AUDIOVISUEL / STOP MOTION / COMMUNICATION</span>
+      <h2 id="dialog-title">Trégor Cinéma — Vœux 2027<span>.</span></h2>
+      <p>Une vidéo de vœux en stop motion imaginée pour l’association Trégor Cinéma.</p>
+    </div>
+    <video class="dialog-video" controls="" playsinline="" preload="metadata">
+      <source src="assets/video_stop_motion.mp4" type="video/mp4" />Votre navigateur ne prend pas en charge la lecture
+      de cette vidéo.
+    </video>
+    <div class="project-story">
+      <section>
+        <h3>Contexte</h3>
+        <p>Dans le cadre d’un projet de BUT MMI, nous avons imaginé une vidéo de vœux pour Trégor Cinéma. L’objectif
+          était de souhaiter une bonne année 2027 aux partenaires et aux publics de l’association, avec un format
+          créatif adapté aux réseaux sociaux et à l’envoi par mail.</p>
+      </section>
+      <section>
+        <h3>Étapes de travail</h3>
+        <ol>
+          <li>Analyser le brief, les valeurs et les publics de l’association.</li>
+          <li>Imaginer un concept et préparer le scénario ainsi que les éléments visuels.</li>
+          <li>Photographier les différentes étapes pour créer l’animation en stop motion.</li>
+          <li>Assembler les images et réaliser le montage de la vidéo de vœux.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Compétences développées</h3>
+        <p>Conception d’un concept audiovisuel, écriture d’un scénario, préparation d’un tournage, animation image par
+          image, montage vidéo et travail en équipe.</p>
+      </section>
+      <section>
+        <h3>Bilan</h3>
+        <p>Ce projet m’a permis d’explorer la technique du stop motion et de comprendre comment transmettre un message
+          de communication à travers une vidéo courte, tout en respectant l’identité d’une association.</p>
+      </section>
+    </div>
+    <p class="project-tools">Outils utilisés <span>Scénario · photographie · stop motion · montage vidéo</span></p>
   </template>
 </body>
 
